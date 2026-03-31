@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Formulário</title>
+</head>
+
+<body>
+    <form action="sucesso.html" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" required placeholder="Seu nome" id="nome" /><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" required placeholder="exemplo@email.com" id="email" /><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" name="senha" required placeholder="senha" id="senha" /><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="number" name="telefone" required placeholder="(99)99999-9999" id="telefone" /><br>
+
+            <label for="idade">Aniversario:</label><br>
+            <input type="date" name="Aniversario" required placeholder="Aniversario" id="idade" size="10000" /><br>
+
+            <input type="radio" value="m" name="sexo" required />Masculino<br>
+            <input type="radio" value="f" name="sexo" required />Feminino<br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Produto</legend>
+            <label for="quantidade">Quantidade</label><br>
+            <input type="number" name="quantidade" id="quantidade" min="1" max="10"><br>
+            
+            <label for="cor">Cor</label><br>
+            <input type="color" name="cor" id="cor"><br>
+
+            <label for="entrega">Agendar Entrega para data:</label><br>
+            <input type="datetime-local" name="entrega" id="entrega">
+
+            <label for="frete">Selecione o Frete:</label>
+            <select name="frete" id="frete">
+                <option value="pac">PAC</option>
+                <option value="sedex">SEDEX</option>
+                <option value="sedex10">SEDEX 10</option>
+            </select><br><br>
+
+            <label for="observacoes">Observações:</label>
+            <textarea rows="4" cols="40" name="obeservacoes" id="observacoes" placeholder="Escreva aqui observações sobre o produto"></textarea><br><br>
+
+            <input type="checkbox" name="termos" id="termos" > Li e aceito os termos de uso da plataforma
+
+            <button type="button">Ler os Termos de Uso</button> <br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

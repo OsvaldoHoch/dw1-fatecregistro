@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Semanticas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tabelas no HTML5:</h1>
+    </header>
+
+    <main>
+      <!-- Estrutura mínima de uma tabela -->
+      <h3>Estrutura mínima</h3>
+      <table border="1">
+        <!-- linha 1 -->
+        <tr>
+          <td>Dado 1</td>
+          <td>Dado 2</td>
+          <td>Dado 3</td>
+          <td>Dado 4</td>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+          <td>Dado 5</td>
+          <td>Dado 6</td>
+          <td>Dado 7</td>
+          <td>Dado 8</td>
+        </tr>
+      </table>
+
+      <h3>Tabela com Cabeçalho</h3>
+      <table border="1">
+        <!-- linha 1 -->
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+          <td>Notebook</td>
+          <td>R$3000,00</td>
+        </tr>
+      </table>
+
+      <h3>Tabela com Título</h3>
+      <table border="1">
+        <caption>
+          Tabela de preços
+        </caption>
+        <tr>
+          <th>Serviço</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Pintura Residencial</td>
+          <td>R$2500,00</td>
+        </tr>
+        <tr>
+          <td>Pintura Laboriatorial</td>
+          <td>R$3,00</td>
+        </tr>
+      </table>
+
+      <h3>Tabela com Estrutura Semântica</h3>
+      <table border="1">
+        <caption>
+          Vendas do Mês
+        </caption>
+        <!-- HEADER -->
+        <thead>
+          <tr>
+            <th>Produtos</th>
+            <th>Quantidade</th>
+            <th>Preços</th>
+          </tr>
+        </thead>
+        <!-- BODY -->
+        <tbody>
+          <tr>
+            <td>Mouse</td>
+            <td>10</td>
+            <td>R$20,00</td>
+          </tr>
+        </tbody>
+        <!-- FOOTER -->
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>R$200,00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <br /><br />
+
+      <table border="1">
+        <caption>
+          Vendas do Mês
+        </caption>
+        <!-- HEADER -->
+        <thead>
+          <tr>
+            <th>Produtos</th>
+            <th>Quantidade</th>
+            <th>Preços</th>
+          </tr>
+        </thead>
+        <!-- BODY -->
+        <tbody>
+          <tr>
+            <td rowspan="2">Mouse</td>
+            <td>10</td>
+            <td>R$20,00</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>R$25,00</td>
+          </tr>
+        </tbody>
+        <!-- FOOTER -->
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>R$200,00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <h3>Tabela com Atributo Scope</h3>
+      <table border="1">
+        <caption>
+          Notas do alunos por disciplinas
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Aluno</th>
+            <th scope="col">Desenvolvimento Web</th>
+            <th scope="col">Design Digital</th>
+            <th scope="col">Banco de Dados</th>
+            <th scope="col">Algoritimos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ana</th>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Abner</th>
+            <td>8</td>
+            <td>9</td>
+            <td>9.9</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">Carlos</th>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br /><br /><br />
+
+      <hr />
+      <footer>
+        <p>
+          <em
+            >&copy; 2026 - FATEC Registro - DSM - Osvaldo Hildebrand Hoch
+            Carvalho</em
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
