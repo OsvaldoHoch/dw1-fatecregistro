@@ -106,7 +106,7 @@ body {
     border: solid antiquewhite 1px;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 10px;  
     text-decoration: none;
 
@@ -211,7 +211,7 @@ body {
     border-radius: 10px;
     max-width: 500px;
     min-width: 280px;
-    /* box-shadow: 0 2px 2px rgba(27, 10, 0, 0.3); */
+    box-shadow: -5px 5px 10px rgba(27, 10, 0, 0.3);
 }
 .sobre-texto {
     margin-top: 0;
@@ -256,7 +256,7 @@ body {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:baseline;
     gap: 200px;
 }
 .footer-content h4 {
@@ -272,4 +272,26 @@ body {
     border-top: 1px solid #814b26;
     text-align: center;
     padding: 10px;
+}
+
+.voltar-inicio a {
+    position: absolute;
+    right: 100px;
+    color: rgb(231, 200, 174);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+}
+.voltar-inicio a::after {
+    content: "↑";
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.voltar-inicio a:hover {
+    color: antiquewhite;
+    transition: background-color 0.2s ease;
 }
